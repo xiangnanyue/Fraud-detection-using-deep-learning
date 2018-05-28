@@ -113,7 +113,7 @@ class RBM(object):
         Restore a previously trained model if the flag restore_previous_model is true.
         """
 
-        init_op = tf.global_variables_initializer()
+        init_op = tf.initialize_all_variables()
         self.tf_saver = tf.train.Saver()
 
         self.tf_session.run(init_op)
@@ -442,7 +442,7 @@ class RBM(object):
 
         self._build_model()
 
-        init_op = tf.global_variables_initializer()
+        init_op = tf.initialize_all_variables()
         self.tf_saver = tf.train.Saver()
 
         with tf.Session() as self.tf_session:
