@@ -1,3 +1,5 @@
+This project is originally from https://github.com/blackecho/Deep-Learning-TensorFlow, and demo by forked resource.
+
 # Credit Card Fraud Detection
 
 Original blog posts: 
